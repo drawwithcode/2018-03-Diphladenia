@@ -1,17 +1,13 @@
 function preload(){
-  // put preload code here
 }
 
 function setup() {
-  // put setup code here
   createCanvas(600, 640);
   background(0);
   frameRate(3);
 }
 
 function draw() {
-  // put drawing code here
-
   //points
   for(var x = 60; x < 600; x += 60) {
   for(var y = 40; y < 640; y += 40) {
@@ -27,7 +23,7 @@ function draw() {
   for(var y = 0; y < 640; y += 40) {
   strokeWeight(1);
   stroke(255);
-  noFill()
+  noFill();
   rectMode(CORNER);
   rect(x, y, 60, 40);
   }
@@ -52,8 +48,8 @@ function draw() {
   for(var y = 40; y < 640; y += 80) {
   var customHue = x / 600 * 255;
   var customSaturation = y / 640 * 255;
-  strokeWeight(random()*5)
-  noFill()
+  strokeWeight(random()*5);
+  noFill();
   stroke(255);
   ellipse(x, y, random()*100);
   }
